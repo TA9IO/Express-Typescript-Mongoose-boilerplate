@@ -1,13 +1,14 @@
 import mongoose from 'mongoose';
+const db = mongoose.connection;
 
-export default () => {
-  const mongoString = 'mongodb://localhost:27017/test';
-
-  mongoose.connect(mongoString, {}, (error: any) => {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log('Database Connected');
-    }
+export default (url : string) => {
+  db.on("error", console.error.bind(console, "connection error:"));
+  db.once("open", function () {
+    console.log('we are connected... ')
+  });
+  return mongoose.connect(url, {
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true,
   });
 };
+

@@ -5,7 +5,8 @@
       "profile updated successfuly": "تم تحديث المعل،مات بنجاح."
     },
     "errorMessages": {
-      "User already exists": "المستخدم موجود بالفعل."
+      "User already exists": "المستخدم موجود بالفعل.",
+      "add Your Email": " الرجاء ادخال الايمايل نيغا "
     }
   },
   "home": {

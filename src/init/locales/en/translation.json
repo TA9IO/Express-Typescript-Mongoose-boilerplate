@@ -5,7 +5,8 @@
       "profile updated successfuly": "Profile updated successfuly"
     },
     "errorMessages": {
-      "User already exists": "User already exists"
+      "User already exists": "User already exists",
+      "add Your Email": " Email is Required Nigga! "
     }
   },
   "home": {
